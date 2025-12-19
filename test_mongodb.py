@@ -4,7 +4,11 @@ Test MongoDB Connection
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 
-uri = "mongodb+srv://kumargaurvit_db_user:gaurvit123@network-security.cyocccj.mongodb.net/?appName=network-security"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+uri = os.getenv("MONGO_DB_URL")
 
 # Create a new client and connect to the server
 client = MongoClient(uri, server_api=ServerApi('1'))
