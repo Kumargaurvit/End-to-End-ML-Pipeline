@@ -72,3 +72,48 @@ This project aims to **classify website data as either legitimate or phishing**,
 - Amazon EC2 Instance (Web App Deployment)
 
 ---
+
+## 🗄 MongoDB Atlas Setup
+
+1. Create a MongoDB Atlas account:  
+   https://www.mongodb.com/cloud/atlas
+
+2. Create a new cluster (Free Tier M0 works)
+
+3. Create a database and collection:
+   - Database name: `your_db_name`
+   - Collection name: `your_collection_name`
+
+4. Add your IP address to **Network Access**
+
+5. Create a database user and note:
+   - Username
+   - Password
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the root directory and add:
+
+```env
+MONGO_DB_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<db_name>?retryWrites=true&w=majority
+
+---
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+## ▶️ Run the FastAPI Application
+```bash
+python app.py
+
+## ▶️ Run the Training Pipeline Locally
+```bash
+python main.py
