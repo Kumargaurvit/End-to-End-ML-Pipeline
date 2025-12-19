@@ -98,6 +98,7 @@ Create a `.env` file in the root directory and add:
 
 ```env
 MONGO_DB_URL=mongodb+srv://<username>:<password>@cluster0.mongodb.net/<db_name>?retryWrites=true&w=majority
+```
 
 ---
 
@@ -109,11 +110,14 @@ cd your-repo-name
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
+```
 
 ## ▶️ Run the FastAPI Application
 ```bash
 python app.py
+```
 
 ## ▶️ Run the Training Pipeline Locally
 ```bash
 python main.py
+```
