@@ -90,6 +90,11 @@ This project aims to **classify website data as either legitimate or phishing**,
    - Username
    - Password
 
+6. Set your Database name and Collection name as a constant for data ingestion:
+   -  Go to networksecurity/constant/training_pipeline/__init__.py
+   -  Replace DATA_INGESTION_COLLECTION_NAME value with your MongoDB Collection name
+   -  Replace DATA_INGESTION_DATABASE_NAME value with your MongoDB Database name
+
 ---
 
 ## 🔐 Environment Variables
