@@ -1,8 +1,8 @@
-# 🛡️ Network Security System – Phishing Website Detection
+# 🛡️ End to End ML Pipeline for Phishing Website Detection
 
 ## 📌 Project Overview
 
-The **Network Security System** is a machine learning–based web application designed to **detect whether a website is legitimate or a phishing site** based on extracted URL and network-related features.
+A **Machine Learning–based Phishing Detection System** with an **End-to-End ML pipeline** and a **deployment-ready FastAPI service for real-time URL classification**.
 
 The system automates the **end-to-end ML pipeline**, including:
 - Data ingestion from MongoDB
